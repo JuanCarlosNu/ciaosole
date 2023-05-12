@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>presupuestador</h1>
+    <div>   
+        <form action="calculate">
+          <label>Ancho</label> <input type="number" id="Ancho" value="value"><br>
+          <label>Alto</label><input type="number" id="Alto" value="value">
+        </form>
+       <button onclick="Call()">resultado</button>
+        <p id="res"></p>
+        <p id="see"></p>
+    </div>
+    <script>
+      let Alto;
+      let Ancho;
+      let Bigger;
+      const tope = 160;
+      const costo = 100;
+
+      function Call(){
+        Ancho = document.getElementById("Ancho").value;
+        Alto =  document.getElementById("Alto").value;
+        if (Alto >= Ancho){ Bigger = Alto}else{
+          Bigger = Ancho};
+       document.getElementById("res").innerHTML = Bigger * costo}
+          
+    
+    </script>
+</body>
+</html>
